@@ -1,6 +1,6 @@
 # MEMORIA RAM
 
-<img src="img/modulo_ram.jpg" alt="Módulo de memoria RAM" width="500"/>
+<img src="img/modulo_ram.jpg" alt="Módulo de memoria RAM" width="400" align="right"/>
 
 ## 1. ¿QUÉ ES LA MEMORIA RAM?
 
