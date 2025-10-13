@@ -1,6 +1,6 @@
 # MEMORIA RAM
 
-![Módulo de memoria RAM](img/modulo_ram.jpg =500x)
+![Módulo de memoria RAM](img/modulo_ram.jpg){width='500px'}
 
 ## 1. ¿QUÉ ES LA MEMORIA RAM?
 
