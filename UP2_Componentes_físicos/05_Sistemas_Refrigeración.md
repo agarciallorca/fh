@@ -316,7 +316,7 @@ El líquido refrigerante **absorbe calor** del componente y lo **transporta** a 
 - <20 dBA: Casi inaudible
 - 20-30 dBA: Silencioso
 - 30-40 dBA: Audible
-- >40 dBA: Ruidoso
+- \>40 dBA: Ruidoso
 
 **PWM (Pulse Width Modulation):**
 - Control de velocidad inteligente (4 pines)
