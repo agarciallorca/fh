@@ -1,5 +1,7 @@
 # MEMORIA RAM
 
+![Módulo de memoria RAM](/img/modulo_ram.jpg)
+
 ## 1. ¿QUÉ ES LA MEMORIA RAM?
 
 **RAM (Random Access Memory)** es la memoria principal del sistema, de tipo volátil (pierde los datos al apagarse). Permite el acceso aleatorio a cualquier posición de memoria en el mismo tiempo, a diferencia de las memorias secuenciales.
