@@ -228,20 +228,6 @@ Depende de la aplicación:
 
 ---
 
-## RESUMEN DE CONCEPTOS CLAVE
-
-1. RAM es memoria volátil de acceso aleatorio
-2. MT/s mide transferencias por segundo (no MHz)
-3. DDR transfiere 2 datos por ciclo de reloj
-4. Generaciones DDR no son compatibles entre sí
-5. Timings bajos = mejor latencia
-6. Dual channel duplica el ancho de banda
-7. Velocidad Y timings afectan al rendimiento
-8. Compatibilidad CPU-Placa-RAM es crítica
-9. Más RAM no siempre = mejor rendimiento (depende del uso)
-
----
-
 ## EJERCICIOS PROPUESTOS
 
 1. Calcula la latencia real de una DDR4-3600 CL16
