@@ -447,59 +447,6 @@ Los SSD M.2 pueden alcanzar 70-80°C bajo carga continua.
 
 ---
 
-## 9. REFRIGERACIÓN EXÓTICA Y AVANZADA
-
-### 9.1 Refrigeración termoeléctrica (Peltier)
-
-**Principio:** Módulos TEC (Thermoelectric Cooler) que transfieren calor por efecto Peltier
-
-**Ventajas:**
-- Puede enfriar por debajo de temperatura ambiente
-- Sin partes móviles (excepto disipación de calor de TEC)
-
-**Desventajas:**
-- Consume mucha energía
-- Genera condensación (requiere aislamiento)
-- Poco eficiente
-- Raramente usado hoy en día
-
-### 9.2 Refrigeración por cambio de fase
-
-**Principio:** Compresor como en un frigorífico/aire acondicionado
-
-**Características:**
-- Temperaturas de -40°C o inferiores
-- Para overclocking extremo
-- Muy costoso (1000-3000€+)
-- Requiere aislamiento contra condensación
-
-### 9.3 Nitrógeno líquido (LN2)
-
-**Uso:** Overclocking de récords mundiales
-
-**Características:**
-- Temperatura: -196°C
-- No es una solución permanente (se evapora)
-- Extremadamente peligroso
-- Solo para competiciones y benchmarking
-
-### 9.4 Aceite mineral (Immersion cooling)
-
-**Principio:** Sumergir componentes en aceite dieléctrico no conductor
-
-**Ventajas:**
-- Refrigeración extrema
-- Silencioso
-- Estética única
-
-**Desventajas:**
-- Mantenimiento complicado
-- Dificulta upgrades
-- Costoso
-- Nicho de mercado
-
----
-
 ## 10. MONITORIZACIÓN Y CONTROL TÉRMICO
 
 ### 10.1 Software de monitorización
