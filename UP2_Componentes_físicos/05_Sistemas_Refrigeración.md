@@ -1,5 +1,7 @@
 # SISTEMAS DE REFRIGERACIÓN
 
+<img src="img/heat_sink.jpg" width="320px" align="right">
+
 ## 1. ¿POR QUÉ ES NECESARIA LA REFRIGERACIÓN?
 
 Los componentes electrónicos generan calor durante su funcionamiento debido al paso de corriente eléctrica (efecto Joule). El calor excesivo causa:
@@ -760,4 +762,4 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 
 ## RECURSOS
 
-<img src="img/heat_sink.jpg" width="320px" align="right">
+<a href="https://www.vecteezy.com/free-vector/heat-sink">Heat Sink Vectors by Vecteezy</a>
