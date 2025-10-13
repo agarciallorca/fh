@@ -185,8 +185,8 @@ Tubos sellados con líquido que **transportan calor por cambio de fase**:
 
 ### 5.4 Configuración push/pull
 
-**Push (empuje):** Ventilador empuja aire hacia el disipador
-**Pull (extracción):** Ventilador extrae aire del disipador
+**Push (empuje):** Ventilador empuja aire hacia el disipador\
+**Pull (extracción):** Ventilador extrae aire del disipador\
 **Push-Pull:** Dos ventiladores (uno empuja, otro extrae)
 - Mejora 5-10% el rendimiento
 - Más ruido
