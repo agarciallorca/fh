@@ -755,3 +755,9 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 6. Describe el procedimiento completo para instalar un disipador de torre en un procesador AMD AM5
 
 7. Analiza las especificaciones de 3 disipadores diferentes y determina cuál es más adecuado para un Intel Core i7-14700K (TDP 125W, boost 253W)
+
+---
+
+## RECURSOS
+
+<img src="img/heat_sink.jpg" width="320px" align="right">
