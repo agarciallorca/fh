@@ -236,3 +236,8 @@ Depende de la aplicación:
 2. ¿Qué es mejor: DDR4-3200 CL14 o DDR4-3600 CL18?
 3. ¿Por qué DDR5-4800 tiene menos latencia real que DDR4-3200 aunque los timings son más altos?
 4. Investiga la diferencia de rendimiento entre single y dual channel
+
+---
+
+## RECURSOS ##
+<a href="https://www.vecteezy.com/free-vector/ram-memory">Ram Memory Vectors by Vecteezy</a>
