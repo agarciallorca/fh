@@ -1,10 +1,12 @@
 # SISTEMAS DE REFRIGERACIÓN
 
-<img src="img/heat_sink.jpg" width="320px" align="right">
-
 ## 1. ¿POR QUÉ ES NECESARIA LA REFRIGERACIÓN?
 
-Los componentes electrónicos generan calor durante su funcionamiento debido al paso de corriente eléctrica (efecto Joule). El calor excesivo causa:
+Los componentes electrónicos generan calor durante su funcionamiento debido al paso de corriente eléctrica (efecto Joule). 
+
+<img src="img/heat_sink.jpg" width="320px" align="right">
+
+El calor excesivo causa:
 
 - **Reducción del rendimiento** (throttling térmico)
 - **Inestabilidad del sistema** (reinicios, cuelgues)
