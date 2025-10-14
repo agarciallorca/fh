@@ -120,11 +120,11 @@ Compuesto termoconductor que **rellena las microimperfecciones** entre el IHS (I
 3. **Extensión manual**: Con espátula (método avanzado)
 4. **Cruz**: Menos recomendado actualmente
 
-**Errores comunes:**
+**Errores comunes:**\
 ❌ Aplicar demasiada pasta (efecto aislante)\
 ❌ Aplicar muy poca (cobertura incompleta)\
 ❌ No limpiar pasta antigua antes de reaplicar\
-❌ Mover el disipador después de instalarlo\
+❌ Mover el disipador después de instalarlo
 
 **Renovación:** Cada 2-4 años o al desmontar el disipador
 
