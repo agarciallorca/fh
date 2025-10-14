@@ -121,10 +121,10 @@ Compuesto termoconductor que **rellena las microimperfecciones** entre el IHS (I
 4. **Cruz**: Menos recomendado actualmente
 
 **Errores comunes:**
-❌ Aplicar demasiada pasta (efecto aislante)
-❌ Aplicar muy poca (cobertura incompleta)
-❌ No limpiar pasta antigua antes de reaplicar
-❌ Mover el disipador después de instalarlo
+❌ Aplicar demasiada pasta (efecto aislante)\
+❌ Aplicar muy poca (cobertura incompleta)\
+❌ No limpiar pasta antigua antes de reaplicar\
+❌ Mover el disipador después de instalarlo\
 
 **Renovación:** Cada 2-4 años o al desmontar el disipador
 
@@ -600,7 +600,7 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 ### 13.2 Dimensiones críticas
 
 **Altura CPU cooler:**
-- Verificar clearance de caja
+- Verificar dimensiones de caja
 - Típico: 150-165mm
 - Low profile: <70mm
 
@@ -666,13 +666,6 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 - Mala aplicación de pasta → Rehacer
 - Flujo de aire bloqueado → Reorganizar cables
 - Overclock inestable → Reducir frecuencias o voltajes
-
-### Problema: Condensación (raro)
-
-**Causas posibles:**
-- Peltier sin aislamiento
-- Cambio de fase mal sellado
-- Ambiente muy húmedo con refrigeración extrema
 
 ---
 
