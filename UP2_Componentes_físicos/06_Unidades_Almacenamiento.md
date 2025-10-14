@@ -122,14 +122,14 @@ Mayor RPM = Menor latencia + Mayor velocidad de transferencia
 
 ### 2.5 Ventajas e inconvenientes
 
-**Ventajas:**
+**Ventajas:**\
 ✓ **Precio por GB muy bajo** (5-10 veces más barato que SSD)\
 ✓ Gran capacidad disponible (hasta 24 TB)\
 ✓ Larga vida útil para almacenamiento de archivos\
 ✓ Tecnología madura y confiable\
 ✓ Mejor para escrituras constantes (vs SSD con escrituras limitadas)\
 
-**Inconvenientes:**
+**Inconvenientes:**\
 ✗ **Muy lento comparado con SSD** (100-150× más lento en acceso aleatorio)\
 ✗ Sensible a golpes y vibraciones (partes móviles)\
 ✗ Ruido audible\
