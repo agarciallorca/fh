@@ -596,5 +596,3 @@ Sistema de monitorización integrado en HDD y SSD que registra parámetros de sa
 3. Explica por qué un SSD NVMe PCIe 4.0 de 7000 MB/s no se nota más rápido que uno SATA de 550 MB/s para uso ofimático
 
 4. Calcula cuántos años durará un SSD de 500 GB con 300 TBW si escribes 20 GB diarios
-
-5. Calcula el IOPS de un HDD de 7200 RPM con seek time de 9ms y latencia rotacional promedio
