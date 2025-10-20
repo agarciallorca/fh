@@ -335,39 +335,6 @@ El líquido refrigerante **absorbe calor** del componente y lo **transporta** a 
 - Altas RPM, palas más agresivas
 - Ideales para radiadores y disipadores
 
-### 7.3 Configuración del flujo en la caja
-
-**Presión positiva:**
-- Más aire ENTRA que SALE
-- Menos acumulación de polvo
-- Aire entra por filtros
-- **Recomendado para la mayoría**
-
-**Presión negativa:**
-- Más aire SALE que ENTRA
-- Mejor temperaturas (teóricamente)
-- Más polvo sin control
-- Aire entra por cualquier rendija
-
-**Presión neutra:**
-- Equilibrio entrada/salida
-- Compromiso entre ambos
-
-### 7.4 Configuración típica recomendada
-
-**Caja ATX estándar:**
-- **Frontal:** 2-3 ventiladores de entrada (120/140mm)
-- **Trasero:** 1 ventilador de salida (120mm)
-- **Superior:** 0-2 ventiladores de salida (opcional)
-- **Inferior:** 0-1 ventilador de entrada (opcional)
-
-**Flujo de aire lógico:**
-- Aire frío entra por frontal/inferior
-- Atraviesa componentes calientes (GPU, CPU)
-- Sale por trasero/superior (aire caliente sube)
-
-**Regla general:** 2-3 entradas, 1-2 salidas (presión positiva leve)
-
 ---
 
 ## 8. REFRIGERACIÓN DE COMPONENTES ESPECÍFICOS
@@ -481,67 +448,11 @@ Los SSD M.2 pueden alcanzar 70-80°C bajo carga continua.
 - Ajustar histéresis (evitar cambios bruscos)
 - Temperatura objetivo
 
-### 10.3 Controladores de ventiladores
-
-**Hardware dedicado:**
-- Controladores en bahías 5.25"
-- Hubs PWM
-- Control manual con potenciómetros
-
-**Integrados en caja:**
-- Botones o controladores incluidos
-- Presets de velocidad
-
 ---
 
-## 11. MANTENIMIENTO PREVENTIVO
+## 11. CRITERIOS DE SELECCIÓN DE SISTEMA DE REFRIGERACIÓN
 
-### 11.1 Limpieza de polvo
-
-**Frecuencia:** Cada 3-6 meses (según ambiente)
-
-**Procedimiento:**
-1. Apagar y desconectar equipo
-2. Llevar a exterior o zona bien ventilada
-3. Aire comprimido en ráfagas cortas
-4. Limpiar filtros con agua (secar completamente)
-5. No tocar componentes con trapos
-6. Sujetar ventiladores al soplar aire
-
-**Importante:** El polvo reduce eficiencia de disipadores y obstruye ventiladores
-
-### 11.2 Verificación de temperaturas
-
-**Herramientas:**
-- Stress tests: Prime95, AIDA64, FurMark
-- Monitorización: HWiNFO, HWMonitor
-
-**Pruebas recomendadas:**
-- 15-30 minutos bajo carga
-- Verificar que no haya throttling
-- Temperaturas dentro de rangos seguros
-
-### 11.3 Signos de problemas térmicos
-
-⚠️ **Alertas:**
-- Temperaturas anormalmente altas en reposo
-- Throttling bajo carga normal
-- Apagados inesperados
-- Ventiladores a máxima velocidad constante
-- Ruidos extraños en ventiladores/bomba
-
-**Causas comunes:**
-- Pasta térmica seca o mal aplicada
-- Disipador mal montado
-- Ventiladores obstruidos por polvo
-- Flujo de aire inadecuado
-- Fallo de ventilador o bomba
-
----
-
-## 12. CRITERIOS DE SELECCIÓN DE SISTEMA DE REFRIGERACIÓN
-
-### 12.1 Preguntas clave
+### 11.1 Preguntas clave
 
 1. **¿Cuál es el TDP del componente?**
    - Determina capacidad mínima necesaria
@@ -561,7 +472,7 @@ Los SSD M.2 pueden alcanzar 70-80°C bajo carga continua.
 6. **¿Preferencia estética?**
    - RGB, diseño, ventana lateral
 
-### 12.2 Recomendaciones por escenario
+### 11.2 Recomendaciones por escenario
 
 **Ofimática/Multimedia (TDP <65W):**
 - Disipador stock o torre básica 20-30€
@@ -586,9 +497,9 @@ Los SSD M.2 pueden alcanzar 70-80°C bajo carga continua.
 
 ---
 
-## 13. COMPATIBILIDAD Y CONSIDERACIONES
+## 12. COMPATIBILIDAD Y CONSIDERACIONES
 
-### 13.1 Sockets y montajes
+### 12.1 Sockets y montajes
 
 **Intel:** LGA 1700, 1200, 1151, 2066
 **AMD:** AM5, AM4, sTRX4, TR4
@@ -597,7 +508,7 @@ Los SSD M.2 pueden alcanzar 70-80°C bajo carga continua.
 
 Muchos fabricantes incluyen brackets para múltiples sockets
 
-### 13.2 Dimensiones críticas
+### 12.2 Dimensiones críticas
 
 **Altura CPU cooler:**
 - Verificar dimensiones de caja
@@ -619,7 +530,7 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 
 ---
 
-## 14. MITOS Y REALIDADES
+## 13. MITOS Y REALIDADES
 
 ### Mito 1: "Más ventiladores = mejor refrigeración"
 **Realidad:** Depende del flujo de aire. Mal configurados pueden causar turbulencia y empeorar temperaturas.
@@ -641,7 +552,7 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 
 ---
 
-## 15. TROUBLESHOOTING: PROBLEMAS COMUNES
+## 14. TROUBLESHOOTING: PROBLEMAS COMUNES
 
 ### Problema: Temperaturas altas repentinas
 
@@ -688,17 +599,11 @@ Muchos fabricantes incluyen brackets para múltiples sockets
 
 1. Calcula el incremento de temperatura de un CPU de 150W TDP con un disipador de 0.4°C/W en un ambiente de 25°C
 
-2. Diseña una configuración de ventiladores para una caja ATX con GPU de alta gama
+2. Compara las ventajas e inconvenientes entre un disipador de aire de 70€ y un AIO de 240mm de 100€
 
-3. Compara las ventajas e inconvenientes entre un disipador de aire de 70€ y un AIO de 240mm de 100€
+3. Explica por qué un AIO de 360mm puede ser más silencioso que uno de 240mm disipando el mismo TDP
 
-4. Investiga la diferencia de rendimiento entre ventiladores de 120mm a 1500 RPM vs 140mm a 1200 RPM
-
-5. Explica por qué un AIO de 360mm puede ser más silencioso que uno de 240mm disipando el mismo TDP
-
-6. Describe el procedimiento completo para instalar un disipador de torre en un procesador AMD AM5
-
-7. Analiza las especificaciones de 3 disipadores diferentes y determina cuál es más adecuado para un Intel Core i7-14700K (TDP 125W, boost 253W)
+4. Analiza las especificaciones de 3 disipadores diferentes y determina cuál es más adecuado para un Intel Core i7-14700K (TDP 125W, boost 253W)
 
 ---
 
