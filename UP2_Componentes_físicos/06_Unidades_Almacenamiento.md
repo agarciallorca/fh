@@ -127,7 +127,7 @@ Mayor RPM = Menor latencia + Mayor velocidad de transferencia
 ✓ Gran capacidad disponible (hasta 24 TB)\
 ✓ Larga vida útil para almacenamiento de archivos\
 ✓ Tecnología madura y confiable\
-✓ Mejor para escrituras constantes (vs SSD con escrituras limitadas)\
+✓ Mejor para escrituras constantes (vs SSD con escrituras limitadas)
 
 **Inconvenientes:**\
 ✗ **Muy lento comparado con SSD** (100-150× más lento en acceso aleatorio)\
@@ -136,7 +136,7 @@ Mayor RPM = Menor latencia + Mayor velocidad de transferencia
 ✗ Mayor consumo energético\
 ✗ Genera calor\
 ✗ Tiempo de arranque del sistema lento\
-✗ Latencia alta (ms vs μs del SSD)\
+✗ Latencia alta (ms vs μs del SSD)
 
 ### 2.6 Casos de uso recomendados
 
@@ -144,7 +144,7 @@ Mayor RPM = Menor latencia + Mayor velocidad de transferencia
 ✓ Backups y copias de seguridad\
 ✓ Servidores de archivos (NAS)\
 ✓ Almacenamiento secundario (complemento a SSD)\
-✓ Presupuestos ajustados con necesidad de mucha capacidad\
+✓ Presupuestos ajustados con necesidad de mucha capacidad
 
 ---
 
@@ -558,11 +558,6 @@ Sistema de monitorización integrado en HDD y SSD que registra parámetros de sa
 - Menos fallos mecánicos
 - Pueden fallar súbitamente (controladora)
 - TBW típicamente excedido por años de uso normal
-
-**Backblaze Stats:**
-- Estadísticas públicas de fallos en sus datacenters
-- Tasa anual ~1.5% para HDD
-- Varía mucho por modelo y fabricante
 
 ### 7.4 Prolongar vida útil
 
