@@ -521,45 +521,7 @@ Las celdas NAND almacenan bits mediante niveles de carga eléctrica:
 - Corrupción de firmware
 - Pérdida de datos por tiempo sin alimentación (años)
 
-### 7.2 SMART (Self-Monitoring, Analysis and Reporting Technology)
-
-**¿Qué es?**
-Sistema de monitorización integrado en HDD y SSD que registra parámetros de salud.
-
-**Atributos importantes HDD:**
-- Reallocated Sectors Count (sectores relocalizados)
-- Current Pending Sectors (sectores pendientes)
-- Uncorrectable Sector Count (errores no corregibles)
-- Spin Retry Count (reintentos de giro)
-- Temperature
-
-**Atributos importantes SSD:**
-- Wear Leveling Count (desgaste)
-- Total LBAs Written (datos escritos)
-- Available Reserved Space
-- Power On Hours
-- Temperature
-
-**Herramientas:**
-- CrystalDiskInfo (Windows)
-- smartctl / smartmontools (Linux/Windows)
-- DiskCheckup
-- HDDScan
-
-### 7.3 Estadísticas de fiabilidad
-
-**HDD:**
-- Tasa de fallos anual: 1-2% (calidad consumo)
-- 0.5-1% (enterprise)
-- Curva "bañera": Fallos tempranos, periodo estable, desgaste
-
-**SSD:**
-- Generalmente más fiables que HDD
-- Menos fallos mecánicos
-- Pueden fallar súbitamente (controladora)
-- TBW típicamente excedido por años de uso normal
-
-### 7.4 Prolongar vida útil
+### 7.2 Prolongar vida útil
 
 **Para HDD:**\
 ✓ Mantener temperatura estable 30-40°C\
@@ -589,10 +551,10 @@ Sistema de monitorización integrado en HDD y SSD que registra parámetros de sa
 
 ## EJERCICIOS PROPUESTOS
 
-1. Compara el coste por GB de un HDD de 4 TB a 80€ vs un SSD de 1 TB a 100€
+1. Compara el coste por GB de un HDD de 4 TB vs un SSD de 1 TB.
 
-2. Diseña una configuración de almacenamiento para un equipo gaming con presupuesto de 250€
+2. Diseña una configuración de almacenamiento para un equipo gaming con presupuesto de 250€.
 
-3. Explica por qué un SSD NVMe PCIe 4.0 de 7000 MB/s no se nota más rápido que uno SATA de 550 MB/s para uso ofimático
+3. Explica por qué un SSD NVMe PCIe 4.0 de 7000 MB/s no se nota más rápido que uno SATA de 550 MB/s para uso ofimático.
 
-4. Calcula cuántos años durará un SSD de 500 GB con 300 TBW si escribes 20 GB diarios
+4. Calcula cuántos años durará un SSD de 500 GB con 300 TBW si escribes 20 GB diarios.
