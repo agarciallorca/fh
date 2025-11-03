@@ -290,10 +290,9 @@ Ejemplo: Raíl +12V debe mantenerse entre 11.64V y 12.36V bajo cualquier carga.
 ### 9.2 Herramientas de cálculo
 
 **Calculadoras online confiables:**
-- be quiet! PSU Calculator
-- Seasonic Wattage Calculator
-- Cooler Master PSU Calculator
-- OuterVision PSU Calculator
+- [be quiet! PSU Calculator](https://www.bequiet.com/es/psucalculator)
+- [Seasonic Wattage Calculator](https://seasonic.com/wattage-calculator/)
+- [Cooler Master PSU Calculator](https://www.coolermaster.com/en-global/power-supply-calculator/)
 
 **Importante:** Estas calculadoras suelen sobreestimar ligeramente (por seguridad), lo cual está bien.
 
@@ -323,77 +322,6 @@ Los condensadores son el componente que más se degrada con el tiempo. PSUs de c
 - Olor a quemado
 
 **Si la PSU falla:** NO repararla tú mismo. Reemplazarla. Los condensadores pueden mantener carga letal incluso desconectada.
-
----
-
-## 11. ERRORES COMUNES
-
-### 11.1 Errores al elegir PSU
-
-❌ **"Tengo 500W de consumo, compro PSU de 500W"** → Sin margen, trabajando al límite constantemente
-
-❌ **"Más watts = mejor"** → PSU de 1200W para sistema de 400W es derroche e ineficiente
-
-❌ **"Esta PSU de 80+ es barata, debe estar bien"** → 80+ básico sin marca conocida suele ser basura
-
-❌ **"No necesito modular, ahorro 30€"** → Cable management horrible, flujo de aire comprometido
-
-❌ **"El ventilador no gira, está rota"** → Muchas PSUs modernas tienen modo "fan-stop" (ventilador apagado en idle)
-
-### 11.2 Errores de instalación
-
-❌ **Conectar cable PCIe 8-pin CPU al conector PCIe GPU** → Pueden quemarse componentes (pin-out diferente)
-
-❌ **No conectar el cable CPU 8-pin** → PC no arranca o inestable
-
-❌ **Usar adaptadores Molex → SATA de mala calidad** → Riesgo de incendio (famoso "Molex to SATA, lose your data")
-
-❌ **12VHPWR mal insertado** → Derretimiento del conector
-
-❌ **Mezclar cables de diferentes PSUs modulares** → Pin-out diferente, destrucción de componentes
-
----
-
-## 12. MITOS Y REALIDADES
-
-**Mito 1:** "Las PSUs pierden potencia con el tiempo"
-**Realidad:** Degradación mínima si es de calidad. Puede perder ~5% capacidad en 10 años.
-
-**Mito 2:** "Titanium es siempre mejor que Gold"
-**Realidad:** Para usuario doméstico, diferencia de eficiencia no justifica coste extra. Gold es óptimo.
-
-**Mito 3:** "Necesito PSU con el mismo wattage que la GPU especifica"
-**Realidad:** Es el wattage recomendado para TODO el sistema, no solo la PSU.
-
-**Mito 4:** "PSU más cara siempre es mejor"
-**Realidad:** Marca y OEM importan más que precio. EVGA BR de 60€ puede ser mejor que genérica de 100€.
-
-**Mito 5:** "La PSU incluida con la caja es suficiente"
-**Realidad:** Casi siempre son las peores PSUs, sin protecciones, baja eficiencia. Reemplazar inmediatamente.
-
----
-
-## RESUMEN DE CONCEPTOS CLAVE
-
-1. **La PSU es crítica** - No escatimar en este componente, puede dañar todo el sistema
-
-2. **Dimensionar correctamente** - Consumo total + 30-50% de margen
-
-3. **80+ Gold es el sweet spot** - Mejor relación eficiencia/precio para mayoría
-
-4. **Modularidad mejora cable management** - Semi-modular es buen balance
-
-5. **OEM importa más que marca** - Investigar quién fabrica realmente la PSU
-
-6. **Protecciones completas son esenciales** - OVP, UVP, OCP, OTP, SCP
-
-7. **Single-rail para gaming/workstation** - Multi-rail para servidores
-
-8. **Garantía indica confianza** - Mínimo 5 años en PSU de calidad
-
-9. **Reviews profesionales son oro** - Consultar antes de comprar
-
-10. **No mezclar cables modulares** - Cada PSU tiene pin-out propio
 
 ---
 
