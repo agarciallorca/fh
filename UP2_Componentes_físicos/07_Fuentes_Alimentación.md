@@ -1,36 +1,18 @@
-# FUENTES DE ALIMENTACIÓN - APUNTES FUNDAMENTALES
+# FUENTES DE ALIMENTACIÓN
 
 ## 1. INTRODUCCIÓN
 
-### 1.1 ¿Qué es una fuente de alimentación?
-
 La fuente de alimentación (PSU - Power Supply Unit) es el componente responsable de convertir la corriente alterna (AC) de la red eléctrica doméstica (230V en Europa, 120V en América) en corriente continua (DC) a los voltajes que necesitan los componentes del ordenador: +12V, +5V, +3.3V y -12V.
 
-Aunque a menudo es un componente olvidado o menospreciado en las configuraciones de PC, la PSU es absolutamente crítica. Una fuente de mala calidad puede causar inestabilidad del sistema, dañar componentes caros, o incluso representar un riesgo de incendio. Por el contrario, una buena fuente puede durar más de una década y sobrevivir múltiples actualizaciones del resto del sistema.
-
-### 1.2 Función y componentes internos
-
-Internamente, una PSU moderna contiene varios componentes clave:
-
-**Filtro EMI:** En la entrada, filtra interferencias electromagnéticas para evitar que la PSU contamine la red eléctrica o sea afectada por ruido externo.
-
-**PFC (Power Factor Correction):** Mejora el factor de potencia, haciendo que el consumo de la PSU sea más eficiente y menos contaminante para la red eléctrica. El PFC activo (obligatorio en la UE para PSUs >75W) es superior al pasivo.
-
-**Rectificador y filtro:** Convierte AC en DC y suaviza la señal.
-
-**Transformador y circuito de conmutación:** Reduce el voltaje y lo convierte en las diferentes tensiones necesarias (+12V, +5V, +3.3V).
-
-**Circuitos de protección:** OVP (sobrevoltaje), UVP (subvoltaje), OCP (sobrecorriente), OTP (sobretemperatura), SCP (cortocircuito).
-
-**Ventilador:** Disipa el calor generado por la conversión de energía (una PSU de 80+ Bronze pierde ~15% de energía como calor).
+Aunque a menudo es un componente olvidado o menospreciado en las configuraciones de PC, la PSU es absolutamente crítica. Una fuente de mala calidad puede causar inestabilidad del sistema, dañar componentes caros, o incluso suponer un riesgo de incendio. Por el contrario, una buena fuente puede durar más de una década y sobrevivir múltiples actualizaciones del resto del sistema.
 
 ---
 
 ## 2. POTENCIA Y DIMENSIONAMIENTO
 
-### 2.1 ¿Cuántos vatios necesito?
+### ¿Cuántos vatios necesito?
 
-Esta es la pregunta más común y, frecuentemente, la más mal respondida. Muchos usuarios sobredimensionan significativamente sus PSUs, gastando dinero innecesariamente.
+Esta es la pregunta más común y, frecuentemente, la peor respondida. Muchos usuarios sobredimensionan significativamente sus PSUs, gastando dinero innecesariamente.
 
 **Cálculo básico:**
 1. CPU: Consultar TDP (65W, 125W, 150W típico)
@@ -50,24 +32,6 @@ Esta es la pregunta más común y, frecuentemente, la más mal respondida. Mucho
 2. **Eficiencia óptima:** Las PSUs funcionan más eficientemente al 50-80% de carga
 3. **Margen para upgrades:** Futuras GPU más potentes
 4. **Degradación:** La capacidad disminuye ligeramente con los años
-
-### 2.2 Single-rail vs Multi-rail
-
-Las PSUs modernas suministran la mayor parte de su potencia por el raíl de +12V (para CPU, GPU, ventiladores).
-
-**Single-rail (raíl único):**
-- Toda la potencia +12V disponible en un solo raíl
-- OCP (protección de sobrecorriente) se activa a valores muy altos (40-60A)
-- Más flexible, menos problemas de compatibilidad
-- Riesgo teórico mayor en caso de cortocircuito
-
-**Multi-rail (múltiples raíles):**
-- Potencia +12V dividida en varios raíles virtuales
-- Cada raíl con OCP independiente (15-30A típico)
-- Más seguro en teoría
-- Puede causar apagados inesperados si un componente pica más corriente de la esperada
-
-**Recomendación moderna:** Single-rail para PCs de gaming/workstation. Multi-rail para servidores donde la seguridad es prioritaria.
 
 ---
 
