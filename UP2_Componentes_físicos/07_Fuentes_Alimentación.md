@@ -289,7 +289,7 @@ Ejemplo: Raíl +12V debe mantenerse entre 11.64V y 12.36V bajo cualquier carga.
 
 ### 9.2 Herramientas de cálculo
 
-**Calculadoras online confiables:**
+**Calculadoras online:**
 - [be quiet! PSU Calculator](https://www.bequiet.com/en/psucalculator)
 - [Seasonic Wattage Calculator](https://seasonic.com/wattage-calculator/)
 - [Cooler Master PSU Calculator](https://www.coolermaster.com/en-global/power-supply-calculator/)
