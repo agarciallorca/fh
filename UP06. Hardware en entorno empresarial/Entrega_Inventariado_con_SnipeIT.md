@@ -35,7 +35,7 @@ Un profesor necesita llevarse un portátil durante dos semanas. Elige uno dispon
 
 **Documenta:**
 - Qué portátil has elegido y cómo has comprobado que estaba disponible.
-- El nombre del profesor al que lo has asignado (puede ser ficticio).
+- El nombre del profesor (ficticio) al que lo has asignado. Tendrás que crear el usuario previamente.
 - Los pasos que has seguido en Snipe-IT.
 - Una captura de la ficha del portátil con el estado final correcto, el usuario asignado y la fecha de devolución visible.
 
@@ -74,17 +74,17 @@ Al revisar el inventario detectas que hay dos registros distintos para lo que pa
 Genera las etiquetas de los portátiles de préstamo que introdujiste en el sistema a través del fichero CSV.
 
 **Documenta:**
-- Imprime en PDF las etiquetas generadas.
+- Captura de las etiquetas generadas.
 
 ---
 
 ### 3.2 · Exportación filtrada a CSV
 
-La administración del centro solicita un listado de los portátiles que están disponibles en este momento. Genera un fichero CSV con la lista de activos solicitados.
+La administración del centro solicita un listado de los portátiles que están disponibles en este momento. Genera un fichero PDF con la lista de activos solicitados mostrando los siguientes datos: Placa del activo, Número de serie, Modelo, Modelo No., Fabricante, Ubicación
 
 **Documenta:**
 - Una captura del listado filtrado en Snipe-IT antes de exportar, mostrando los filtros aplicados.
-- Una captura del CSV abierto en Calc con los datos correctos.
+- Una captura del listado en PDF generado.
 
 ---
 
