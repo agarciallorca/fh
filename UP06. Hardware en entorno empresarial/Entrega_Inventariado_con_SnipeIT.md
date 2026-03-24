@@ -8,7 +8,7 @@ Debes entregar en Aules un único documento PDF con las cuatro partes descritas 
 
 Incluye las siguientes capturas de pantalla del trabajo que has hecho durante las sesiones anteriores:
 
-1. **Taxonomía del inventario** — captura de la lista de categorías, fabricantes o modelos creados.
+1. **Taxonomía del inventario** — captura de la lista de categorías, fabricantes y modelos creados.
 2. **Activos del aula** — captura de la ficha completa de uno de los activos que diste de alta, mostrando todos sus campos.
 3. **Importación de portátiles** — captura del resultado de la importación de tu CSV en Snipe-IT, mostrando los portátiles importados correctamente.
 
