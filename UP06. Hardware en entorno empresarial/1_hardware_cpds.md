@@ -27,13 +27,13 @@ El hardware empresarial está concebido para dar servicio a múltiples usuarios 
 
 | Característica | Personal | Empresarial |
 |---|---|---|
-| Disponibilidad | Best-effort | 99,99 % o superior |
+| Disponibilidad | La mejor posible | 99,99 % o superior |
 | Redundancia | No | Fuentes, discos, NICs, CPU |
 | Gestión remota | No | IPMI / iDRAC / iLO |
 | Factor de forma | Desktop / laptop | Rack / Blade / Tower server |
 | Ciclo de vida | 3-4 años | 5-7 años |
 | Memoria ECC | No | Sí (detecta y corrige errores) |
-| Soporte | Garantía básica | SLA contractual |
+| Soporte | Garantía básica | Contrato con proveedor |
 | Precio medio | 500 – 2.000 € | 3.000 – 100.000 € |
 
 ### 1.4 Memoria ECC (*Error Correcting Code*)
