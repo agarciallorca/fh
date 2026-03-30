@@ -139,8 +139,6 @@ Infraestructuras hiperconvergentes (HCI) donde cómputo, almacenamiento y red se
 
 ## 4. Requerimientos físicos y ambientales de un CPD
 
-> **CE-d:** Se han analizado los requerimientos básicos de seguridad física, organización y condiciones ambientales de un CPD.
-
 ### 4.1 Ubicación y construcción
 
 - **Planta baja o sótano superior** para facilitar el tendido de cableado y evitar inundaciones.
@@ -205,8 +203,6 @@ Un CPD eficiente debe tener PUE < 1,5. Los mejores hyperscalers alcanzan PUE ≈
 ---
 
 ## 5. Sistemas de alimentación ininterrumpida
-
-> **CE-e:** Se han implantado sistemas de alimentación ininterrumpida y estabilizadores de tensión.
 
 ### 5.1 Problemas en el suministro eléctrico
 
@@ -285,8 +281,6 @@ En entornos críticos se instalan **dos PDUs por rack** (alimentadas desde dos S
 ---
 
 ## 6. Almacenamiento y conexión en caliente
-
-> **CE-f:** Se han manipulado correctamente dispositivos hardware para almacenamiento y alimentación con conexión en caliente.
 
 ### 6.1 ¿Qué es la conexión en caliente (*hot-swap / hot-plug*)?
 
