@@ -78,7 +78,7 @@ Clústeres de computación para simulación científica, predicción meteorológ
 #### Factor de forma
 - **Tower:** formato torre, para pequeñas empresas o ubicaciones sin rack.
 - **Rack:** se monta en armario de 19". La altura se mide en unidades rack (U; 1U = 44,45 mm). Los más comunes: 1U, 2U, 4U.
-- **Blade:** cuchillas que se insertan en un chasis compartido. Compactos y con gestión centralizada. Ideales para grandes CPD.
+- **Blade:** "cuchillas" que se insertan en un chasis compartido. Compactos y con gestión centralizada. Ideales para grandes CPD.
 - **Micro-servidor:** nodos de bajo consumo (ARM o Intel Atom) para cargas de trabajo ligeras y densas.
 
 #### CPU de servidor
