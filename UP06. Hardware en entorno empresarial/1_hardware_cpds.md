@@ -69,9 +69,6 @@ Procesamiento cercano a la fuente de datos (fábrica, tienda, vehículo). Requie
 #### Entornos HPC (*High Performance Computing*)
 Clústeres de computación para simulación científica, predicción meteorológica o IA. Se caracterizan por interconexiones de muy baja latencia (InfiniBand) y aceleradores GPU/TPU.
 
-#### Entornos de virtualización y nube privada
-Infraestructuras hiperconvergentes (HCI) donde cómputo, almacenamiento y red se integran en un solo nodo escalable (VMware vSAN, Nutanix, Microsoft Azure Stack HCI).
-
 ---
 
 ## 3. Componentes hardware empresariales
