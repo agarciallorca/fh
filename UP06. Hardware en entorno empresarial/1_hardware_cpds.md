@@ -20,7 +20,7 @@ El hardware empresarial está concebido para dar servicio a múltiples usuarios 
 - **Redundancia:** fuentes de alimentación duales, discos RAID, NICs en *teaming*.
 - **Escalabilidad:** capacidad de añadir CPUs, RAM, almacenamiento sin parar el sistema.
 - **Gestión remota:** tarjetas IPMI / iDRAC / iLO para administrar sin presencia física.
-- **Soporte extendido:** garantías de 3 a 5 años con sustitución en pocas horas (NBD, 4h, etc.).
+- **Soporte extendido:** garantías de 3 a 5 años con sustitución en pocas horas.
 - **Coste elevado:** justificado por la criticidad de los servicios que aloja.
 
 ### 1.3 Tabla comparativa
