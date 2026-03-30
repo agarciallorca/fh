@@ -17,7 +17,7 @@ El hardware personal está diseñado para un único usuario y un uso cotidiano: 
 El hardware empresarial está concebido para dar servicio a múltiples usuarios de forma continua y fiable. Sus características principales son:
 
 - **Alta disponibilidad:** diseñado para funcionar 24×7×365.
-- **Redundancia:** fuentes de alimentación duales, discos RAID, NICs en *teaming*.
+- **Redundancia:** fuentes de alimentación duales, discos RAID, adaptadores de red en *teaming*.
 - **Escalabilidad:** capacidad de añadir CPUs, RAM, almacenamiento sin parar el sistema.
 - **Gestión remota:** tarjetas IPMI / iDRAC / iLO para administrar sin presencia física.
 - **Soporte extendido:** garantías de 3 a 5 años con sustitución en pocas horas.
@@ -28,7 +28,7 @@ El hardware empresarial está concebido para dar servicio a múltiples usuarios 
 | Característica | Personal | Empresarial |
 |---|---|---|
 | Disponibilidad | La mejor posible | 99,99 % o superior |
-| Redundancia | No | Fuentes, discos, NICs, CPU |
+| Redundancia | No | Fuentes, discos, adaptadores de red, CPU |
 | Gestión remota | No | IPMI / iDRAC / iLO |
 | Factor de forma | Desktop / laptop | Rack / Blade / Tower server |
 | Ciclo de vida | 3-4 años | 5-7 años |
