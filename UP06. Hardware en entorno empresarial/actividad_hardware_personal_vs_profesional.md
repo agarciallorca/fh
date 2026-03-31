@@ -26,7 +26,7 @@ Utiliza configuradores oficiales (Dell, HPE, Lenovo) y webs de componentes de co
 
 ---
 
-## 3. Análisis Técnico (Cuestiones Críticas)
+## 3. Análisis técnico
 Responde de forma razonada a las siguientes preguntas basándote en tu investigación:
 
 1. **Rendimiento vs. Paralelismo:** Si el PC tiene más GHz pero solo 2 canales de memoria, y el servidor tiene menos GHz pero 8 canales de memoria, ¿cuál de los dos gestionará mejor 15 Máquinas Virtuales (VMs) accediendo a RAM simultáneamente? Justifica por qué.
