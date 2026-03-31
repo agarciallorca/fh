@@ -21,7 +21,7 @@ Utiliza configuradores oficiales (Dell, HPE, Lenovo) y webs de componentes de co
 | **Soporte Memoria ECC** | | |
 | **Carriles (Lanes) PCIe totales** | | |
 | **Tipo de Almacenamiento** | | |
-| **Gestión Remota (OOB/BMC)** | | |
+| **Gestión Remota** | | |
 | **Fuentes de Alimentación** | | |
 
 ---
