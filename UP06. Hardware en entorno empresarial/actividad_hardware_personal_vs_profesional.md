@@ -2,7 +2,7 @@
 ---
 
 ## 1. Escenario 
-La empresa de logística **"Rápido & Seguro S.A."** necesita renovar su servidor principal de base de datos y virtualización. El Director Financiero ha visto una oferta de un **PC Gaming Extreme** en una gran superficie por **2.800€** que incluye un procesador Intel Core i9 de última generación, 128GB de RAM y refrigeración líquida. 
+La empresa de logística **"Rápido & Seguro S.A."** necesita renovar su servidor principal de base de datos y virtualización. El Director Financiero ha visto una oferta de un **PC Gaming Extreme** en una gran superficie por unos **3.000€** que incluye un procesador Intel Core i9 de última generación, 128GB de RAM y refrigeración líquida. 
 
 Argumenta que *"es mucho más rápido en GHz que los servidores de 5.000€ que propone el departamento técnico"*. Como futuro administrador de sistemas, debes realizar un **informe técnico individual** que compare ambas plataformas y justifique la inversión correcta basándote en la arquitectura real del hardware.
 
