@@ -1,10 +1,4 @@
 # Ejercicios de Conversión entre Sistemas de Numeración
-## 1º ASIR
-
-**Nombre:** _______________________________________
-
-**Fecha:** ____ / ____ / ______
-
 ---
 
 ## Ejercicio 1. Decimal a binario
@@ -154,32 +148,3 @@ Realiza las conversiones indicadas:
 | | | 377 | |
 | | | | F0 |
 | 512 | | | |
-
----
-
-## Ejercicio de ampliación (opcional)
-
-Convierte el número **2025₁₀** a:
-
-- Binario: __________________________
-- Octal: ____________________________
-- Hexadecimal: ______________________
-
----
-
-### Recordatorio
-
-- Para pasar de **binario a octal**, agrupa los bits de **3 en 3**.
-- Para pasar de **binario a hexadecimal**, agrupa los bits de **4 en 4**.
-- En hexadecimal se utilizan los símbolos:
-
-| Decimal | Hexadecimal |
-|----------|----------|
-| 10 | A |
-| 11 | B |
-| 12 | C |
-| 13 | D |
-| 14 | E |
-| 15 | F |
-
-¡Recuerda mostrar todos los pasos de cálculo!
