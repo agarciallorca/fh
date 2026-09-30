@@ -1,7 +1,4 @@
-# La placa base
-
-**Módulo:** Fundamentos de Hardware · **Ciclo:** ASIR
-**Material de referencia para el alumnado**
+# PLACA BASE
 
 ---
 
