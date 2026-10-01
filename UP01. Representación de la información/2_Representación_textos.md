@@ -1,8 +1,8 @@
-\# Material de referencia: ASCII y Unicode
+# Material de referencia: ASCII y Unicode
 
 
 
-\## 1. ASCII (American Standard Code for Information Interchange)
+## 1. ASCII (American Standard Code for Information Interchange)
 
 
 
@@ -10,19 +10,19 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 
-\### Características principales
+### Características principales
 
 
 
-\- Usa \*\*7 bits\*\* por carácter, lo que permite representar \*\*128 caracteres\*\* (valores del 0 al 127).
+- Usa \*\*7 bits\*\* por carácter, lo que permite representar \*\*128 caracteres\*\* (valores del 0 al 127).
 
-\- En la práctica se almacena en 1 byte (8 bits), dejando el bit más significativo libre (usado históricamente para paridad o para las extensiones de 8 bits).
+- En la práctica se almacena en 1 byte (8 bits), dejando el bit más significativo libre (usado históricamente para paridad o para las extensiones de 8 bits).
 
-\- Fue desarrollado en los años 60 y es la base de casi todas las codificaciones de texto posteriores.
+- Fue desarrollado en los años 60 y es la base de casi todas las codificaciones de texto posteriores.
 
 
 
-\### Estructura de la tabla ASCII
+### Estructura de la tabla ASCII
 
 
 
@@ -50,7 +50,7 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 
-\### Ejemplos de códigos
+### Ejemplos de códigos
 
 
 
@@ -74,23 +74,23 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 
-\### Limitaciones de ASCII
+### Limitaciones de ASCII
 
 
 
-\- Solo cubre el alfabeto inglés: \*\*no incluye\*\* `ñ`, vocales acentuadas (`á`, `é`...), ni símbolos como `€` o `£`.
+- Solo cubre el alfabeto inglés: \*\*no incluye\*\* `ñ`, vocales acentuadas (`á`, `é`...), ni símbolos como `€` o `£`.
 
-\- No sirve para lenguas no latinas (griego, cirílico, árabe, chino, etc.).
+- No sirve para lenguas no latinas (griego, cirílico, árabe, chino, etc.).
 
-\- Esto llevó a la aparición de extensiones de 8 bits (como ISO 8859-1 / Latin-1) y, finalmente, a Unicode.
-
-
-
-\---
+- Esto llevó a la aparición de extensiones de 8 bits (como ISO 8859-1 / Latin-1) y, finalmente, a Unicode.
 
 
 
-\## 2. Unicode
+---
+
+
+
+## 2. Unicode
 
 
 
@@ -98,21 +98,21 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 
-\### Características principales
+### Características principales
 
 
 
-\- Un punto de código se escribe como `U+XXXX`, en hexadecimal. Ejemplos: `U+0041` (`A`), `U+00F1` (`ñ`), `U+20AC` (`€`).
+- Un punto de código se escribe como `U+XXXX`, en hexadecimal. Ejemplos: `U+0041` (`A`), `U+00F1` (`ñ`), `U+20AC` (`€`).
 
-\- Cubre más de 150.000 caracteres de más de 150 sistemas de escritura.
+- Cubre más de 150.000 caracteres de más de 150 sistemas de escritura.
 
-\- Es compatible con ASCII: los primeros 128 puntos de código de Unicode coinciden exactamente con la tabla ASCII.
+- Es compatible con ASCII: los primeros 128 puntos de código de Unicode coinciden exactamente con la tabla ASCII.
 
-\- \*\*Importante:\*\* Unicode define \*qué número\* tiene cada carácter. No define cómo se guarda ese número en bytes; para eso existen las codificaciones (UTF-8, UTF-16, UTF-32).
+- \*\*Importante:\*\* Unicode define \*qué número\* tiene cada carácter. No define cómo se guarda ese número en bytes; para eso existen las codificaciones (UTF-8, UTF-16, UTF-32).
 
 
 
-\### Codificaciones de Unicode
+### Codificaciones de Unicode
 
 
 
@@ -128,7 +128,7 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 
-\### Ejemplos de codificación en UTF-8
+### Ejemplos de codificación en UTF-8
 
 
 
@@ -146,7 +146,7 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 
-\### El problema de los "caracteres raros"
+### El problema de los "caracteres raros"
 
 
 
@@ -158,23 +158,23 @@ Cuando un archivo de texto se guarda con una codificación (por ejemplo, UTF-8) 
 
 
 
-\### Relación ASCII – Latin-1 – Unicode
+### Relación ASCII – Latin-1 – Unicode
 
 
 
-\- ASCII (7 bits, 128 caracteres) ⊂ Latin-1 / ISO 8859-1 (8 bits, 256 caracteres) ⊂ Unicode (más de 150.000 caracteres)
+- ASCII (7 bits, 128 caracteres) ⊂ Latin-1 / ISO 8859-1 (8 bits, 256 caracteres) ⊂ Unicode (más de 150.000 caracteres)
 
-\- Los primeros 256 puntos de código de Unicode coinciden con Latin-1.
+- Los primeros 256 puntos de código de Unicode coinciden con Latin-1.
 
-\- UTF-8, UTF-16 y UTF-32 son formas distintas de codificar \*cualquier\* carácter de Unicode en bytes; Latin-1 no forma parte de la familia Unicode, aunque sus primeros caracteres coincidan.
-
-
-
-\---
+- UTF-8, UTF-16 y UTF-32 son formas distintas de codificar \*cualquier\* carácter de Unicode en bytes; Latin-1 no forma parte de la familia Unicode, aunque sus primeros caracteres coincidan.
 
 
 
-\## 3. Ejercicio propuesto
+---
+
+
+
+## 3. Ejercicio propuesto
 
 
 
