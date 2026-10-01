@@ -1,6 +1,23 @@
 # REPRESENTACIÓN DE TEXTOS
 
+## Introducción
 
+Un ordenador solo maneja información en forma de números binarios: ceros y unos. Esto incluye el texto. Para que una máquina pueda almacenar, procesar y transmitir letras, dígitos o símbolos, es necesario establecer una correspondencia entre cada carácter y un número. A esta correspondencia se le llama **codificación de caracteres**.
+
+El proceso tiene dos pasos:
+
+1. **Asignar a cada carácter un número** (por ejemplo, la letra `A` es el 65).
+2. **Guardar ese número como una secuencia de bytes**, según unas reglas concretas.
+
+Para que dos sistemas se entiendan, deben usar la misma codificación. Si un texto se guarda con una y se lee con otra, los bytes se interpretan mal y aparecen los conocidos "caracteres raros" (`Ã±` en lugar de `ñ`). Es un problema muy habitual en administración de sistemas: ficheros de configuración, scripts, bases de datos o correos que se ven mal al moverse entre equipos.
+
+A lo largo de la historia han convivido varias soluciones:
+
+- **ASCII**, pensado para el inglés, con 128 caracteres.
+- **Extensiones de 8 bits** como ISO 8859-1 (Latin-1), que añadieron los caracteres de las lenguas de Europa occidental, pero eran incompatibles entre sí.
+- **Unicode**, que unifica en un único catálogo los caracteres de prácticamente todos los idiomas y que se guarda en bytes mediante codificaciones como UTF-8.
+
+En este material se repasan ASCII y Unicode, sus diferencias y los problemas que resuelve cada uno.
 
 ## 1. ASCII (American Standard Code for Information Interchange)
 
