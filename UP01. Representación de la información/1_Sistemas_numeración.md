@@ -42,14 +42,9 @@ Un **sistema de numeración** es un conjunto de símbolos y reglas que permiten 
 
 ### Elementos fundamentales
 
-#### 1. Base
-Es el número de símbolos diferentes que utiliza el sistema. Determina cuántos dígitos distintos existen.
-
-#### 2. Dígitos
-Son los símbolos utilizados para construir los números. Van desde 0 hasta (base - 1).
-
-#### 3. Valor posicional
-El valor de cada dígito depende de su posición en el número. Cada posición representa una potencia de la base.
+**Base:** Es el número de símbolos diferentes que utiliza el sistema. Determina cuántos dígitos distintos existen.
+**Dígitos:** Son los símbolos utilizados para construir los números. Van desde 0 hasta (base - 1).
+**Valor posicional:** El valor de cada dígito depende de su posición en el número. Cada posición representa una potencia de la base.
 
 ### Sistemas de numeración en informática
 
