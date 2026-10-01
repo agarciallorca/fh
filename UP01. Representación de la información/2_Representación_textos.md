@@ -51,7 +51,7 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 | 48–57 | Dígitos `0` a `9` |
 | 58–64 | Más signos (`:`, `;`, `<`, `=`, `>`, `?`, `@`) |
 | 65–90 | Letras mayúsculas `A` a `Z` |
-| 91–96 | Símbolos (`\[`, `\\`, `]`, `^`, `\_`, `` ` ``) |
+| 91–96 | Símbolos (`[`, `\`, `]`, `^`, `_`, `` ` ``) |
 | 97–122 | Letras minúsculas `a` a `z` |
 | 123–127 | Símbolos y carácter de control DEL |
 
