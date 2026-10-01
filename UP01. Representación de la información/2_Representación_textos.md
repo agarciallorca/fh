@@ -44,27 +44,16 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 | Rango | Contenido |
-
 |---|---|
-
 | 0–31 | Caracteres de control (no imprimibles): salto de línea, tabulador, retorno de carro, etc. |
-
 | 32 | Espacio |
-
 | 33–47 | Signos de puntuación (`!`, `"`, `#`, `%`...) |
-
 | 48–57 | Dígitos `0` a `9` |
-
 | 58–64 | Más signos (`:`, `;`, `<`, `=`, `>`, `?`, `@`) |
-
 | 65–90 | Letras mayúsculas `A` a `Z` |
-
 | 91–96 | Símbolos (`\[`, `\\`, `]`, `^`, `\_`, `` ` ``) |
-
 | 97–122 | Letras minúsculas `a` a `z` |
-
 | 123–127 | Símbolos y carácter de control DEL |
-
 
 
 ### Ejemplos de códigos
@@ -72,17 +61,11 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 | Carácter | Decimal | Hexadecimal | Binario |
-
 |---|---|---|---|
-
 | `A` | 65 | 0x41 | 01000001 |
-
 | `a` | 97 | 0x61 | 01100001 |
-
 | `0` | 48 | 0x30 | 00110000 |
-
 | Espacio | 32 | 0x20 | 00100000 |
-
 | Salto de línea (LF) | 10 | 0x0A | 00001010 |
 
 
@@ -134,13 +117,9 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 | Codificación | Tamaño | Características | Uso típico |
-
 |---|---|---|---|
-
 | UTF-8 | 1 a 4 bytes (variable) | Compatible con ASCII en su primer byte; eficiente en espacio para texto en inglés | Web, Linux, estándar de facto en internet |
-
 | UTF-16 | 2 o 4 bytes (variable) | Más eficiente que UTF-8 para algunos alfabetos asiáticos | Windows (interno), Java, JavaScript |
-
 | UTF-32 | 4 bytes (fijo) | Simple de procesar, pero ocupa mucho espacio | Poco usado en la práctica |
 
 
@@ -150,15 +129,10 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 | Carácter | Punto de código | Bytes en UTF-8 | Nº de bytes |
-
 |---|---|---|---|
-
 | `A` | U+0041 | `41` | 1 |
-
 | `ñ` | U+00F1 | `C3 B1` | 2 |
-
 | `€` | U+20AC | `E2 82 AC` | 3 |
-
 | `😀` | U+1F600 | `F0 9F 98 80` | 4 |
 
 
@@ -195,13 +169,13 @@ Cuando un archivo de texto se guarda con una codificación (por ejemplo, UTF-8) 
 
 
 
-1\. Abrir un editor hexadecimal (por ejemplo, `Format-Hex` en PowerShell o `xxd` en Linux).
+1. Abrir un editor hexadecimal (por ejemplo, `Format-Hex` en PowerShell o `xxd` en Linux).
 
-2\. Crear un archivo de texto con la palabra `España` y guardarlo en UTF-8.
+2. Crear un archivo de texto con la palabra `España` y guardarlo en UTF-8.
 
-3\. Observar los bytes correspondientes a la `ñ` (`C3 B1`).
+3. Observar los bytes correspondientes a la `ñ` (`C3 B1`).
 
-4\. Reabrir el mismo archivo indicando la codificación ANSI/Windows-1252 y comprobar que aparece como `EspaÃ±a`.
+4. Reabrir el mismo archivo indicando la codificación ANSI/Windows-1252 y comprobar que aparece como `EspaÃ±a`.
 
-5\. Repetir el proceso guardando el archivo como ANSI y comparar el tamaño en bytes con la versión UTF-8.
+5. Repetir el proceso guardando el archivo como ANSI y comparar el tamaño en bytes con la versión UTF-8.
 
