@@ -31,7 +31,7 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 
 
 
-- Usa \*\*7 bits\*\* por carácter, lo que permite representar \*\*128 caracteres\*\* (valores del 0 al 127).
+- Usa **7 bits** por carácter, lo que permite representar **128 caracteres** (valores del 0 al 127).
 
 - En la práctica se almacena en 1 byte (8 bits), dejando el bit más significativo libre (usado históricamente para paridad o para las extensiones de 8 bits).
 
@@ -68,33 +68,15 @@ ASCII es un sistema de codificación de caracteres que asigna un número entero 
 | Espacio | 32 | 0x20 | 00100000 |
 | Salto de línea (LF) | 10 | 0x0A | 00001010 |
 
-
-
-\*\*Dato útil:\*\* la diferencia entre una mayúscula y su minúscula es siempre 32 (el bit 0x20). Por ejemplo, `A` (65) y `a` (97).
-
-
-
 ### Limitaciones de ASCII
-
-
-
-- Solo cubre el alfabeto inglés: \*\*no incluye\*\* `ñ`, vocales acentuadas (`á`, `é`...), ni símbolos como `€` o `£`.
-
+- Solo cubre el alfabeto inglés: no incluye `ñ`, vocales acentuadas (`á`, `é`...), ni símbolos como `€` o `£`.
 - No sirve para lenguas no latinas (griego, cirílico, árabe, chino, etc.).
-
 - Esto llevó a la aparición de extensiones de 8 bits (como ISO 8859-1 / Latin-1) y, finalmente, a Unicode.
-
-
 
 ---
 
-
-
 ## 2. Unicode
-
-
-
-Unicode es un estándar que asigna un número único, llamado \*\*punto de código\*\*, a prácticamente todos los caracteres de todos los sistemas de escritura del mundo, además de símbolos, emojis y signos técnicos.
+Unicode es un estándar que asigna un número único, llamado **punto de código**, a prácticamente todos los caracteres de todos los sistemas de escritura del mundo, además de símbolos, emojis y signos técnicos.
 
 
 
@@ -103,12 +85,9 @@ Unicode es un estándar que asigna un número único, llamado \*\*punto de códi
 
 
 - Un punto de código se escribe como `U+XXXX`, en hexadecimal. Ejemplos: `U+0041` (`A`), `U+00F1` (`ñ`), `U+20AC` (`€`).
-
 - Cubre más de 150.000 caracteres de más de 150 sistemas de escritura.
-
 - Es compatible con ASCII: los primeros 128 puntos de código de Unicode coinciden exactamente con la tabla ASCII.
-
-- \*\*Importante:\*\* Unicode define \*qué número\* tiene cada carácter. No define cómo se guarda ese número en bytes; para eso existen las codificaciones (UTF-8, UTF-16, UTF-32).
+- **Importante:** Unicode define *qué número* tiene cada carácter. No define cómo se guarda ese número en bytes; para eso existen las codificaciones (UTF-8, UTF-16, UTF-32).
 
 
 
@@ -145,7 +124,7 @@ Cuando un archivo de texto se guarda con una codificación (por ejemplo, UTF-8) 
 
 
 
-\*\*Ejemplo clásico:\*\* la `ñ` en UTF-8 son los bytes `C3 B1`. Si un programa los interpreta como Windows-1252, cada byte se lee como un carácter distinto, mostrando `Ã±` en vez de `ñ`.
+**Ejemplo:** la `ñ` en UTF-8 son los bytes `C3 B1`. Si un programa los interpreta como Windows-1252, cada byte se lee como un carácter distinto, mostrando `Ã±` en vez de `ñ`.
 
 
 
@@ -157,7 +136,7 @@ Cuando un archivo de texto se guarda con una codificación (por ejemplo, UTF-8) 
 
 - Los primeros 256 puntos de código de Unicode coinciden con Latin-1.
 
-- UTF-8, UTF-16 y UTF-32 son formas distintas de codificar \*cualquier\* carácter de Unicode en bytes; Latin-1 no forma parte de la familia Unicode, aunque sus primeros caracteres coincidan.
+- UTF-8, UTF-16 y UTF-32 son formas distintas de codificar cualquier carácter de Unicode en bytes; Latin-1 no forma parte de la familia Unicode, aunque sus primeros caracteres coincidan.
 
 
 
