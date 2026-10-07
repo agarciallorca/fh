@@ -272,7 +272,7 @@ El líquido refrigerante **absorbe calor** del componente y lo **transporta** a 
 
 ### 6.5 Ventajas e inconvenientes AIO vs Custom
 
-**AIO:**
+**AIO:**\
 ✓ Plug & play\
 ✓ Sin mantenimiento de líquido\
 ✓ Garantía completa\
@@ -280,7 +280,7 @@ El líquido refrigerante **absorbe calor** del componente y lo **transporta** a 
 ✗ No ampliable\
 ✗ Vida útil limitada (5-7 años)
 
-**Custom Loop:**
+**Custom Loop:**\
 ✓ Máximo rendimiento\
 ✓ Completamente personalizable\
 ✓ Puede refrigerar GPU, chipset, etc.\
