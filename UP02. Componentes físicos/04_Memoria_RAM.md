@@ -153,25 +153,7 @@ Una RAM más rápida con peores timings puede tener latencia similar.
 
 ---
 
-## 9. PERFILES XMP/DOCP/EXPO
-
-### XMP (Extreme Memory Profile) - Intel
-Perfiles predefinidos de overclocking certificados por el fabricante.
-
-### DOCP/A-XMP - AMD
-Equivalente de AMD para memorias con perfil XMP.
-
-### EXPO (Extended Profiles for Overclocking) - AMD DDR5
-Perfiles optimizados específicamente para plataformas AMD con DDR5.
-
-**Funcionamiento:**
-- La RAM incluye perfiles con velocidades y timings optimizados
-- Se activan desde la BIOS/UEFI
-- Permiten alcanzar velocidades superiores a JEDEC (estándar base)
-
----
-
-## 10. ASPECTOS PRÁCTICOS
+## 9. ASPECTOS PRÁCTICOS
 
 ### ¿Cuánta RAM necesito?
 - **8 GB:** Mínimo actual (navegación, ofimática)
@@ -193,7 +175,7 @@ Perfiles optimizados específicamente para plataformas AMD con DDR5.
 
 ---
 
-## 11. RENDIMIENTO: VELOCIDAD vs LATENCIA
+## 10. RENDIMIENTO: VELOCIDAD vs LATENCIA
 
 ### ¿Qué es más importante?
 
@@ -214,7 +196,7 @@ Depende de la aplicación:
 
 ---
 
-## 12. DIAGNÓSTICO Y TESTING
+## 11. DIAGNÓSTICO Y TESTING
 
 ### Herramientas útiles:
 - **CPU-Z:** Ver especificaciones y timings reales
