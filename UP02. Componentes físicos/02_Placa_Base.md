@@ -18,10 +18,8 @@
 12. [Conectores del panel trasero (I/O)](#12-conectores-del-panel-trasero-io)
 13. [Placas base para servidores y estaciones de trabajo](#13-placas-base-para-servidores-y-estaciones-de-trabajo)
 14. [Compatibilidad entre componentes](#14-compatibilidad-entre-componentes)
-15. [Montaje paso a paso](#15-montaje-paso-a-paso)
-16. [Cómo elegir una placa base](#16-cómo-elegir-una-placa-base)
-17. [Averías y diagnóstico habituales](#17-averías-y-diagnóstico-habituales)
-18. [Comandos útiles para identificar la placa](#18-comandos-útiles-para-identificar-la-placa)
+15. [Cómo elegir una placa base](#16-cómo-elegir-una-placa-base)
+16. [Comandos útiles para identificar la placa](#18-comandos-útiles-para-identificar-la-placa)
 
 ---
 
@@ -432,44 +430,7 @@ Antes de montar o ampliar un equipo, comprueba esta cadena de compatibilidad:
 
 ---
 
-## 15. Montaje paso a paso
-
-### Precauciones previas
-
-- Trabaja con el equipo **desenchufado** de la red eléctrica.
-- Descarga la **electricidad estática**: usa pulsera antiestática o toca una superficie metálica conectada a tierra.
-- Sujeta la placa por los **bordes**, sin tocar componentes ni contactos.
-- Trabaja sobre una superficie limpia y no conductora.
-
-### Secuencia recomendada
-
-1. **Preparar la placa fuera de la caja** (sobre su propia caja de cartón o superficie antiestática):
-   1. Abrir el socket e instalar la **CPU** alineando la marca (triángulo) con la del socket.
-   2. Colocar los **módulos de RAM** en las ranuras correctas para doble canal.
-   3. Instalar la unidad **M.2** y su tornillo de fijación.
-   4. Montar el **disipador** (con pasta térmica si no la trae) y conectar su cable al conector CPU_FAN.
-2. **Preparar la caja:** comprobar o colocar los **separadores (standoffs)** según el factor de forma de la placa y colocar la **chapa trasera I/O** si no va integrada.
-3. **Instalar la placa** en la caja y atornillarla sin forzar.
-4. **Instalar la fuente de alimentación** y dirigir los cables.
-5. **Conectar la alimentación:** ATX de 24 pines y EPS de CPU.
-6. **Conectar el panel frontal:** botones, LED, USB y audio.
-7. **Instalar la tarjeta gráfica** (si la hay) y conectarle la alimentación auxiliar.
-8. **Conectar el almacenamiento** SATA (datos y alimentación).
-9. **Organizar cables** para facilitar el flujo de aire.
-10. **Primera puesta en marcha:** conectar monitor, teclado y cable de red, encender y entrar en la **BIOS/UEFI** para verificar que detecta CPU, RAM y discos.
-
-### Comprobaciones tras el primer arranque
-
-- [ ] La BIOS/UEFI reconoce **toda la RAM** instalada.
-- [ ] La CPU muestra el modelo y la **frecuencia correctos**.
-- [ ] Las unidades de almacenamiento aparecen.
-- [ ] Los ventiladores giran y las **temperaturas** son normales en reposo.
-- [ ] Se ha activado el **perfil XMP/EXPO** si procede.
-- [ ] Virtualización, Secure Boot y modo SATA configurados según necesidad.
-
----
-
-## 16. Cómo elegir una placa base
+## 15. Cómo elegir una placa base
 
 | Criterio | Preguntas que hay que hacerse |
 |----------|-------------------------------|
@@ -497,46 +458,7 @@ Antes de montar o ampliar un equipo, comprueba esta cadena de compatibilidad:
 
 ---
 
-## 17. Averías y diagnóstico habituales
-
-### Tabla de síntomas
-
-| Síntoma | Causas probables | Qué comprobar |
-|---------|------------------|---------------|
-| No enciende, sin señales | Fuente, cable de alimentación, botón de encendido, cortocircuito | Interruptor de la fuente, conexión del panel frontal, cortocircuito con la caja (separadores de más) |
-| Ventiladores giran, sin imagen | RAM mal asentada, CPU, BIOS incompatible, gráfica | Reasentar RAM, probar con un módulo, conectar el monitor a la salida correcta |
-| Pitidos o LED de diagnóstico | Error detectado en el POST | Manual de la placa (códigos de pitidos, LED de depuración, código Q-Code) |
-| Se reinicia o se apaga solo | Sobrecalentamiento, fuente insuficiente, RAM defectuosa | Temperaturas, potencia de la fuente, prueba de memoria |
-| La hora y la fecha se pierden | Pila CMOS agotada | Sustituir la pila CR2032 |
-| Dispositivos USB no funcionan | Cabecera mal conectada, controlador, daño en puerto | Reconectar cabeceras, probar otros puertos, actualizar controladores |
-| Disco no detectado | Cable, ranura M.2/SATA compartida, modo SATA | Reconectar, revisar manual, revisar modo AHCI/RAID en BIOS |
-| CPU no reconocida tras actualizar | BIOS antigua | Actualizar BIOS (Flashback si está disponible) |
-| Condensadores hinchados o quemados | Desgaste, sobretensión, calor | Inspección visual; normalmente requiere cambiar la placa |
-
-### Códigos de diagnóstico
-
-- **Pitidos (beep codes):** dependen del fabricante del firmware (AMI, Award, Phoenix). Consulta el manual.
-- **LED de depuración:** indicadores de **CPU, DRAM, VGA, BOOT** que se quedan encendidos donde falla el arranque.
-- **Display de códigos (Q-Code):** muestra un código hexadecimal del POST.
-
-### Método de diagnóstico: configuración mínima
-
-1. Desconecta todo lo no imprescindible (discos, tarjetas de expansión, USB).
-2. Deja solo **placa, CPU con disipador, un módulo de RAM, fuente** y monitor (en la salida de vídeo correcta).
-3. Enciende y observa si llega al POST.
-4. Añade componentes **uno a uno**, probando tras cada uno.
-5. Si es posible, **sustituye** piezas sospechosas por otras que se sepan buenas.
-6. **Documenta** cada prueba y su resultado.
-
-### Precauciones importantes
-
-- Un **cortocircuito** por separadores de más o por tornillos sueltos puede impedir el arranque.
-- Nunca **fuerces** conectores: están diseñados con **clave** para una sola posición.
-- Los cambios de **BIOS/UEFI** a valores incorrectos (overclock, voltajes) pueden provocar inestabilidad; restablece a valores por defecto.
-
----
-
-## 18. Comandos útiles para identificar la placa
+## 16. Comandos útiles para identificar la placa
 
 ### Linux
 
