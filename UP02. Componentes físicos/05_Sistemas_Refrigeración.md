@@ -121,10 +121,10 @@ Compuesto termoconductor que **rellena las microimperfecciones** entre el IHS (I
 4. **Cruz**: Menos recomendado actualmente
 
 **Errores comunes:**\
-❌ Aplicar demasiada pasta (efecto aislante)\
-❌ Aplicar muy poca (cobertura incompleta)\
-❌ No limpiar pasta antigua antes de reaplicar\
-❌ Mover el disipador después de instalarlo
+- Aplicar demasiada pasta (efecto aislante)
+- Aplicar muy poca (cobertura incompleta)
+- No limpiar pasta antigua antes de reaplicar
+- Mover el disipador después de instalarlo
 
 **Renovación:** Cada 2-4 años o al desmontar el disipador
 
@@ -273,21 +273,21 @@ El líquido refrigerante **absorbe calor** del componente y lo **transporta** a 
 ### 6.5 Ventajas e inconvenientes AIO vs Custom
 
 **AIO:**
-✓ Plug & play
-✓ Sin mantenimiento de líquido
-✓ Garantía completa
-✓ Precio razonable
-✗ No ampliable
+✓ Plug & play\
+✓ Sin mantenimiento de líquido\
+✓ Garantía completa\
+✓ Precio razonable\
+✗ No ampliable\
 ✗ Vida útil limitada (5-7 años)
 
 **Custom Loop:**
-✓ Máximo rendimiento
-✓ Completamente personalizable
-✓ Puede refrigerar GPU, chipset, etc.
-✓ Estética premium
-✗ Muy costoso (400-1500€+)
-✗ Requiere conocimientos avanzados
-✗ Mantenimiento cada 6-12 meses
+✓ Máximo rendimiento\
+✓ Completamente personalizable\
+✓ Puede refrigerar GPU, chipset, etc.\
+✓ Estética premium\
+✗ Muy costoso (400-1500€+)\
+✗ Requiere conocimientos avanzados\
+✗ Mantenimiento cada 6-12 meses\
 ✗ Riesgo si mal instalado
 
 ---
