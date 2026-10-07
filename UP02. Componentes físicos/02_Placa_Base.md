@@ -266,9 +266,9 @@ La CPU necesita tensiones bajas y muy estables (en torno a 1 V), mientras que la
 
 Se compone de:
 
-- **Fases de alimentación** (*power phases*): cuantas más, mejor reparto de carga y menor calor por fase.
+- **Fases de alimentación**: cuantas más, mejor reparto de carga y menor calor por fase.
 - **MOSFET**: conmutan la corriente.
-- **Inductancias (chokes)** y **condensadores**: filtran y estabilizan.
+- **Inductancias** y **condensadores**: filtran y estabilizan.
 - **Controlador PWM**: gestiona las fases.
 - **Disipadores de VRM**: evacuan calor.
 
@@ -291,7 +291,7 @@ El **firmware** de la placa base es el primer software que se ejecuta al encende
 | Arranque | Lento, basado en MBR | Más rápido, basado en la partición **ESP** |
 | Extensibilidad | Limitada | Modular, admite controladores y aplicaciones |
 
-> Hoy en día, casi todas las placas usan **UEFI**, aunque es habitual seguir llamándolo "BIOS". Muchas ofrecen **CSM** (modo de compatibilidad con arranque *legacy*).
+> Hoy en día, casi todas las placas usan **UEFI**, aunque es habitual seguir llamándolo "BIOS". Muchas ofrecen modo de compatibilidad con arranque *legacy*.
 
 ### Proceso de arranque
 
@@ -352,7 +352,6 @@ Agrupa los cables de botones y LED de la caja:
 | **HD Audio** (AAFP) | Audio frontal |
 | **CPU_FAN / SYS_FAN / AIO_PUMP** | Ventiladores y bomba de refrigeración líquida |
 | **RGB / ARGB** (12 V / 5 V) | Iluminación (conectores **no compatibles** entre sí) |
-| **TPM** | Módulo de plataforma segura (si no está integrado) |
 | **COM / LPT** | Puertos serie/paralelo (algunas placas) |
 | **Jumpers** | Configuración (p. ej. CLR_CMOS) |
 
@@ -367,7 +366,7 @@ Agrupa los cables de botones y LED de la caja:
 | **HDMI / DisplayPort** | Salida de vídeo de la gráfica integrada de la CPU |
 | **Audio (jack 3,5 mm / S/PDIF)** | Entradas y salidas de audio |
 | **Wi-Fi / Bluetooth (antenas)** | En modelos con tarjeta inalámbrica integrada |
-| **PS/2** | Teclado y ratón clásicos (en algunas placas) |
+| **PS/2** | Teclado y ratón clásicos (obsoleto, sólo en algunas placas antiguas) |
 | **Botones BIOS Flashback / Clear CMOS** | Utilidades de recuperación |
 
 > **Importante:** las salidas de vídeo de la placa **solo funcionan si la CPU tiene gráficos integrados**. Si se instala una gráfica dedicada, el monitor debe conectarse a ella.
