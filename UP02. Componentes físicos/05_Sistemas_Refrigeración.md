@@ -87,24 +87,6 @@ En cada tramo interviene un mecanismo físico distinto:
 
 La **resistencia térmica** (Rθ) mide lo que se *opone* un elemento al paso del calor. Se expresa en **°C/W**: indica cuántos grados sube la temperatura por cada vatio que atraviesa ese elemento. Cuanto **más baja**, mejor: un disipador de 0,3 °C/W es mejor que uno de 0,6 °C/W.
 
-Una forma sencilla de estimar el calentamiento es:
-
-```text
-ΔT = P × Rθ        →        Tj ≈ Ta + ΔT
-```
-
-> **Ejemplo resuelto.** Una CPU disipa 100 W y está refrigerada por un sistema con una resistencia térmica total de 0,35 °C/W. La temperatura ambiente es de 25 °C.
->
-> - Incremento de temperatura: ΔT = 100 W × 0,35 °C/W = **35 °C**
-> - Temperatura del chip: Tj ≈ 25 °C + 35 °C = **60 °C**
->
-> Con un disipador de 0,6 °C/W, el mismo procesador llegaría a 25 + 60 = **85 °C**. Una diferencia que parece pequeña en las especificaciones se convierte en 25 °C en la práctica.
-
-Dos precisiones sobre este cálculo:
-
-- Es una **simplificación**. En la realidad, la resistencia depende del caudal de aire, de la carga y de otros factores, y el fabricante no siempre la publica.
-- Las resistencias de cada tramo del camino del calor **se suman**: la del chip, la de la pasta, la de la base del disipador, la de las aletas, etc. Por eso una mala aplicación de pasta térmica puede arruinar un disipador excelente.
-
 ---
 
 ## 4. PASTA TÉRMICA
