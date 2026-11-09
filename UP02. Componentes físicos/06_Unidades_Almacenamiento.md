@@ -15,7 +15,7 @@ El almacenamiento es la capacidad de guardar datos de forma **persistente** (no 
 **Por acceso:**
 - **Primario:** Directamente accesible por CPU (RAM)
 - **Secundario:** Almacenamiento masivo (HDD, SSD)
-- **Terciario:** Backup y archivo (cintas, discos ópticos)
+- **Terciario:** Backup y archivo (cintas, discos ópticos, online)
 
 **Por tecnología:**
 - **Magnético:** HDD, cintas
