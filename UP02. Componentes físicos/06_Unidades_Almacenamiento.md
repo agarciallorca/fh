@@ -57,15 +57,15 @@ Los **HDD (Hard Disk Drive)** utilizan **tecnología magnética** para almacenar
 
 ### 2.2 Organización de datos
 
-**Pista (track):** Círculo concéntrico en la superficie del plato
+**Pista (track) (E):** Círculo concéntrico en la superficie del plato
 
-**Sector:** Subdivisión de una pista (tradicionalmente 512 bytes, ahora 4 KB)
+**Sector (F):** Subdivisión de una pista (tradicionalmente 512 bytes, ahora 4 KB)
 
-**Cilindro:** Conjunto de pistas en la misma posición de todos los platos
+**Cilindro (D):** Conjunto de pistas en la misma posición de todos los platos
 
-**Clúster:** Unidad mínima de asignación del sistema de archivos (múltiples sectores)
+**Clúster:** Unidad mínima de asignación del sistema de archivos (agrupación de sectores)
 
-![ORganización física del disco HDD](img/Basic_disk_displaying.svg)
+![Organización física del disco HDD](img/Basic_disk_displaying.svg)
 
 ### 2.3 Especificaciones técnicas
 
