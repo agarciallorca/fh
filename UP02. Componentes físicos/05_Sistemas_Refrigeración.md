@@ -378,38 +378,9 @@ Para equipos de aula, oficina o domésticos suele recomendarse una **presión li
 
 ---
 
-## 10. REFRIGERACIÓN EN SERVIDORES Y CENTROS DE DATOS
+## 10. MONITORIZACIÓN Y CONTROL TÉRMICO
 
-En un servidor el reto es el mismo, pero se multiplica: muchos equipos de alto consumo concentrados en un espacio reducido y funcionando de forma continua. Los principios se mantienen, pero las soluciones son distintas a las de un PC de sobremesa.
-
-**Flujo de aire de delante hacia atrás.** Los servidores de rack están diseñados para que el aire frío entre por el frontal y salga caliente por la parte trasera. Para ello los chasis incluyen una fila de ventiladores pequeños y rápidos (en los servidores de 1U suelen ser de 40 mm y muy ruidosos) y **conductos de aire** que dirigen el flujo exactamente hacia los disipadores de las CPU. Por eso los procesadores de servidor llevan normalmente disipadores **pasivos**: dependen del flujo que genera el chasis.
-
-**Ventiladores redundantes.** Los ventiladores son piezas *hot-swap* y suelen estar duplicados: si uno falla, el resto compensa mientras se sustituye, sin apagar el servidor.
-
-**Pasillos fríos y calientes.** En un centro de datos, los racks se colocan en filas enfrentadas, de modo que los frontales (entrada de aire frío) dan a un mismo pasillo y las partes traseras (salida de aire caliente) dan al contrario. Así se evita que los equipos respiren el aire caliente de los vecinos. Los huecos vacíos en el rack se cubren con **paneles ciegos** para que el aire no recircule.
-
-**Temperatura de la sala.** Se suele trabajar con aire de entrada de 18-27 °C, el intervalo recomendado por ASHRAE, el organismo de referencia en climatización de centros de datos. Los sistemas de refrigeración de sala consumen una parte muy importante de la energía de un CPD.
-
-**Monitorización.** Los servidores incorporan sensores de temperatura y de velocidad de ventiladores gestionados por el controlador BMC (iDRAC, iLO, IPMI), lo que permite recibir alertas térmicas sin estar delante del equipo.
-
-```bash
-# Temperaturas y velocidad de ventiladores a través del BMC (IPMI)
-ipmitool sdr type Temperature
-ipmitool sdr type Fan
-
-# Sensores del sistema operativo (paquete lm-sensors)
-sensors
-```
-
-**Tendencia: refrigeración líquida.** Con la llegada de procesadores y aceleradores (GPU para IA) de cientos de vatios, el aire empieza a quedarse corto en las instalaciones de mayor densidad. Por eso cada vez es más habitual la refrigeración líquida directa sobre el chip, con circuitos que llevan el líquido hasta la propia placa.
-
-> **En la práctica.** No retires los conductos de aire ni dejes huecos sin tapar en un servidor: se rompe el flujo previsto y los componentes pueden sobrecalentarse aunque los ventiladores giren al máximo.
-
----
-
-## 11. MONITORIZACIÓN Y CONTROL TÉRMICO
-
-### 11.1 Software de monitorización
+### 10.1 Software de monitorización
 
 Medir es el primer paso para diagnosticar. Las herramientas más habituales son:
 
@@ -421,7 +392,7 @@ Medir es el primer paso para diagnosticar. Las herramientas más habituales son:
 | **Fan Control, SpeedFan** | Control manual de ventiladores con curvas personalizadas. SpeedFan es muy veterano y tiene soporte limitado para hardware reciente | Windows |
 | **lm-sensors (`sensors`), s-tui, htop** | Temperaturas, frecuencias y carga desde la terminal | Linux |
 
-### 11.2 Control desde la BIOS/UEFI
+### 10.2 Control desde la BIOS/UEFI
 
 La placa base permite controlar los ventiladores conectados a sus cabezales, aunque no haya ningún programa instalado. Normalmente ofrece perfiles predefinidos:
 
@@ -432,28 +403,11 @@ La placa base permite controlar los ventiladores conectados a sus cabezales, aun
 
 En una **curva personalizada** se indica qué velocidad (RPM o porcentaje) debe tener el ventilador a cada temperatura. Un buen ajuste mantiene los ventiladores casi parados en reposo y los acelera de forma progresiva con la carga. También conviene configurar la **histéresis** o los tiempos de subida y bajada: sin ella, cuando la temperatura oscila alrededor de un umbral, el ventilador sube y baja de velocidad continuamente, algo muy molesto.
 
-### 11.3 Cómo realizar una prueba térmica
-
-Para comprobar si la refrigeración es adecuada se sigue un protocolo sencillo:
-
-1. **Medir en reposo:** anota la temperatura unos minutos después de arrancar el equipo, sin programas abiertos.
-2. **Generar carga sostenida** (10-15 minutos) con una herramienta de estrés, como Prime95, OCCT o Cinebench en Windows, o `stress-ng` en Linux.
-3. **Observar** durante la prueba la temperatura, la frecuencia de la CPU y la velocidad de los ventiladores.
-4. **Valorar el resultado:** la temperatura debe estabilizarse por debajo de Tjmax, sin que la frecuencia caiga (sin throttling) y sin ruido excesivo.
-
-```bash
-# Linux: carga todos los núcleos durante 10 minutos...
-stress-ng --cpu 0 --timeout 600s
-
-# ...y, en otra terminal, observar las temperaturas cada segundo
-watch -n 1 sensors
-```
-
 ---
 
-## 12. CRITERIOS DE SELECCIÓN DE SISTEMA DE REFRIGERACIÓN
+## 11. CRITERIOS DE SELECCIÓN DE SISTEMA DE REFRIGERACIÓN
 
-### 12.1 Preguntas clave
+### 11.1 Preguntas clave
 
 Antes de elegir un disipador o un AIO conviene responder a estas preguntas, por este orden:
 
@@ -464,7 +418,7 @@ Antes de elegir un disipador o un AIO conviene responder a estas preguntas, por 
 5. **¿Voy a hacer overclock?** Aumenta el calor generado y exige un sistema más potente.
 6. **¿Tengo preferencias estéticas?** RGB, diseño, ventana lateral. Es el último criterio, pero también cuenta.
 
-### 12.2 Recomendaciones por escenario
+### 11.2 Recomendaciones por escenario
 
 | Escenario | TDP | Refrigeración recomendada | Presupuesto aprox. |
 |-----------|-----|---------------------------|--------------------|
@@ -478,9 +432,9 @@ Los precios son **orientativos** y cambian con el tiempo: conviene contrastarlos
 
 ---
 
-## 13. COMPATIBILIDAD Y CONSIDERACIONES
+## 12. COMPATIBILIDAD Y CONSIDERACIONES
 
-### 13.1 Sockets y montajes
+### 12.1 Sockets y montajes
 
 El sistema de anclaje del disipador depende del socket de la placa, de modo que un disipador solo es válido para los sockets para los que incluye soporte.
 
@@ -491,7 +445,7 @@ El sistema de anclaje del disipador depende del socket de la placa, de modo que 
 
 Muchos fabricantes incluyen soportes (*brackets*) para varios sockets. Además, hay generaciones de sockets que mantienen el mismo anclaje: por ejemplo, en general los disipadores de AM4 valen para AM5 y los de LGA 1700 para LGA 1851, aunque siempre hay que confirmarlo en la ficha del producto. Como los sockets cambian con cada generación, conviene revisar siempre la lista de sockets soportados que indica el fabricante.
 
-### 13.2 Dimensiones críticas
+### 12.2 Dimensiones críticas
 
 - **Altura del disipador de CPU:** debe ser menor que la altura máxima que admite la caja (se indica en sus especificaciones). Lo habitual en torres es 150-165 mm; los modelos de bajo perfil miden menos de 70 mm.
 - **Longitud del radiador de un AIO:** hay que comprobar qué tamaños admite cada posición (frontal, superior, trasera) y que no choque con la RAM, la GPU o los cables.
@@ -500,35 +454,7 @@ Muchos fabricantes incluyen soportes (*brackets*) para varios sockets. Además, 
 
 ---
 
-## 14. MITOS Y REALIDADES
-
-**Mito 1: «Más ventiladores significan mejor refrigeración».**
-**Realidad:** lo que cuenta es el flujo de aire, no el número de ventiladores. Si están mal orientados o se contrarrestan, generan turbulencias y pueden empeorar las temperaturas (ver apartado 9).
-
-**Mito 2: «La refrigeración líquida siempre es mejor que la de aire».**
-**Realidad:** las torres de aire de gama alta compiten con los AIO de 240-280 mm. Solo los radiadores grandes (360 mm o más) superan claramente al aire.
-
-**Mito 3: «El disipador de serie es suficiente».**
-**Realidad:** funciona y cumple su cometido, pero con más ruido y temperaturas más altas. Un modelo de otro fabricante mejora de forma notable la experiencia, sobre todo en equipos potentes.
-
-**Mito 4: «Hay que renovar la pasta térmica cada mes».**
-**Realidad:** una pasta de calidad se mantiene en buen estado durante 2-4 años.
-
-**Mito 5: «Cuanta más pasta térmica, mejor».**
-**Realidad:** el exceso actúa como aislante. Lo óptimo es una capa fina y uniforme.
-
-**Mito 6: «La refrigeración líquida hay que rellenarla».**
-**Realidad:** los AIO son sistemas cerrados y no necesitan mantenimiento del líquido. Solo los circuitos personalizados lo requieren.
-
-**Mito 7: «Si la CPU llega a 80 °C, se está dañando».**
-**Realidad:** los procesadores modernos están diseñados para funcionar con seguridad hasta su Tjmax. Lo importante no es el número concreto, sino que no haya throttling ni inestabilidad. Eso sí, una temperatura habitual mucho más baja alarga la vida del equipo y reduce el ruido.
-
-**Mito 8: «El metal líquido es la mejor opción para todos».**
-**Realidad:** consigue mejores temperaturas, pero conduce la electricidad y daña el aluminio. Si se derrama sobre la placa puede causar un cortocircuito, y por eso solo es recomendable para usuarios con experiencia.
-
----
-
-## 15. DIAGNÓSTICO DE PROBLEMAS COMUNES
+## 13. DIAGNÓSTICO DE PROBLEMAS COMUNES
 
 Ante un problema térmico, lo primero es **medir** (apartado 11) y comparar con los valores esperados. A partir de ahí se descartan las causas de la más sencilla y probable a la más compleja.
 
@@ -581,17 +507,15 @@ Si el equipo funcionaba bien y de pronto se calienta, algo ha cambiado. Casi sie
 
 ## EJERCICIOS PROPUESTOS
 
-1. Calcula el incremento de temperatura de una CPU de 150 W de TDP con un disipador de 0,4 °C/W en un ambiente de 25 °C. ¿Qué temperatura alcanzaría el chip? ¿Es un valor seguro si su Tjmax es de 100 °C?
+1. Compara las ventajas e inconvenientes entre un disipador de aire de 70 € y un AIO de 240 mm de 100 €.
 
-2. Compara las ventajas e inconvenientes entre un disipador de aire de 70 € y un AIO de 240 mm de 100 €.
+2. Explica por qué un AIO de 360 mm puede ser más silencioso que uno de 240 mm disipando el mismo TDP.
 
-3. Explica por qué un AIO de 360 mm puede ser más silencioso que uno de 240 mm disipando el mismo TDP.
+3. Analiza las especificaciones de 3 disipadores diferentes y determina cuál es más adecuado para un Intel Core i7-14700K (TDP 125 W, boost 253 W). ¿Qué valor de potencia usarías para dimensionar la refrigeración y por qué?
 
-4. Analiza las especificaciones de 3 disipadores diferentes y determina cuál es más adecuado para un Intel Core i7-14700K (TDP 125 W, boost 253 W). ¿Qué valor de potencia usarías para dimensionar la refrigeración y por qué?
+4. Una caja tiene dos ventiladores de 120 mm en el frontal (entrada) y uno de 120 mm en la parte trasera (salida). ¿Qué tipo de presión se genera en su interior? Propón un cambio para obtener presión neutra o negativa y explica qué efecto tendría.
 
-5. Una caja tiene dos ventiladores de 120 mm en el frontal (entrada) y uno de 120 mm en la parte trasera (salida). ¿Qué tipo de presión se genera en su interior? Propón un cambio para obtener presión neutra o negativa y explica qué efecto tendría.
-
-6. **Práctica.** Mide las temperaturas de la CPU en reposo y tras 10 minutos de carga sostenida en un equipo del aula. Anota también la frecuencia y la velocidad de los ventiladores. ¿Se observa throttling? ¿Qué mejorarías?
+5. **Práctica.** Mide las temperaturas de la CPU en reposo y tras 10 minutos de carga sostenida en un equipo del aula. Anota también la frecuencia y la velocidad de los ventiladores. ¿Se observa throttling? ¿Qué mejorarías?
 
 7. Un servidor 1U con dos procesadores muestra una temperatura notablemente más alta en la CPU 2 que en la CPU 1. Enumera las posibles causas y cómo las comprobarías.
 
