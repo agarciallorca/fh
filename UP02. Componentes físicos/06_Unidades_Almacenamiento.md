@@ -65,6 +65,8 @@ Los **HDD (Hard Disk Drive)** utilizan **tecnología magnética** para almacenar
 
 **Clúster:** Unidad mínima de asignación del sistema de archivos (múltiples sectores)
 
+![ORganización física del disco HDD](img/Basic_disk_displaying.svg)
+
 ### 2.3 Especificaciones técnicas
 
 **Capacidad:**
